@@ -1,6 +1,10 @@
 ---
 name: design-feel-like-your-own-product
 description: Learn and replicate a designer's style from Figma files to create new components that feel authentic to their design system. Use this skill whenever a user shares a Figma file and wants to create new components, plugins, or UI elements that match an existing design style — even if they don't explicitly say "learn my style". Trigger when users mention Figma files, design systems, "make it look like my design", "match the style", or ask to extend an existing UI.
+metadata:
+  author: Tiannanzhao
+  version: 1.1.0
+  mcp-server: figma
 ---
 
 # SKILL: Learning a Designer's Style from Figma MCP
@@ -116,6 +120,17 @@ The first output exists to surface what the designer actually cares about. Being
 
 **Ignoring layer names**
 How a designer names things in Figma reflects how they think. A component called "Status Pill" rather than "Badge" signals it belongs only in status contexts. Layer naming is part of the design logic — read it that way.
+
+---
+
+## If Figma MCP is unavailable
+
+If `get_design_context` or `get_variable_defs` fails, don't block. Instead:
+- Ask the user to paste component properties or share a screenshot
+- Ask them to describe 2–3 things they feel strongly about (color, spacing, shape)
+- Proceed with whatever visual evidence is available — a partial model is better than no output
+
+The goal is always to produce something the designer can react to.
 
 ---
 
