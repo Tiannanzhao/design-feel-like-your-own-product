@@ -58,7 +58,7 @@ Once installed, the skill triggers automatically when you:
 ## Skill structure
 
 ```
-design-style-learning/
+design-feel-like-your-own-product/
 └── SKILL.md        # Main skill instructions
 ```
 
@@ -73,6 +73,15 @@ This skill is licensed under **CC BY-NC 4.0**.
 ❌ You may **not** use it for commercial purposes  
 
 See [LICENSE](./LICENSE) for full terms.
+
+---
+
+## Changelog
+
+### v1.1.0
+- Added `metadata` fields (author, version, mcp-server)
+- Added Figma MCP fallback instructions for when tools are unavailable
+- Fixed folder name to match skill name (`design-feel-like-your-own-product`)
 
 ---
 
